@@ -32,7 +32,7 @@ export const ServerChannel = ({
   const Icon = iconMap[channel.type];
 
   const onClick = () => {
-    router.push(`/serveurs/${params.serverId}/salons/${channel.id}`);
+    router.push(`/serveurs/${params?.serverId}/salons/${channel.id}`);
   };
 
   const onAction = (e: React.MouseEvent, action: ModalType) => {
